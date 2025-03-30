@@ -60,4 +60,5 @@ collections:
           - { label: "Title", name: "title", widget: "text" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Main photo", name: "mainPhoto", widget: "image" }
           - { label: "Experience", name: "experience", widget: "markdown" }

@@ -1,17 +1,15 @@
 <template>
 	<main id="main" class="home">
-		<MDC :value="home.content" />
+		{{ main.name }}
 	</main>
 
 </template>
 
 <script setup>
 
-const { data: home } = reactive(await useAsyncData("home", () =>
-	queryContent("/pages/home").findOne())
-);
-
-setSeoHead(home.SEOmetaData);
+const { data: main } = reactive(await useAsyncData("home", () =>
+	queryContent("/main/about").findOne())
+)
 
 </script>
 
@@ -20,9 +18,11 @@ main {
 	display: grid;
 	justify-items: center;
 	align-items: center;
+
 	:deep(div) {
 		max-width: 50em;
 	}
+
 	// assets/scss/mixins
 	@include fade-in;
 }

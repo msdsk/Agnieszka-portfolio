@@ -1,9 +1,6 @@
 <template>
-	<div class="layout-wrapper" :class="{'--firstVisitAnimation': firstVisit }">
-		<LayoutHeader />
-		<div class="page-wrapper default">
-			<slot />
-		</div>
+	<div class="layout-wrapper" :class="{ '--firstVisitAnimation': firstVisit }">
+		<slot />
 		<LayoutFooter />
 	</div>
 </template>
@@ -12,9 +9,9 @@
 
 const route = useRoute();
 // initiallize 'firstVisit' state => changed via watch 
-const firstVisit = useState("firstVisit", () => route.path === '/' ? true : false);
+const firstVisit = useState("firstVisit", () => route.path === '/');
 
-watch( () => route.fullPath,
+watch(() => route.fullPath,
 	() => {
 		firstVisit.value = false
 	}
