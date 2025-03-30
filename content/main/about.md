@@ -3,6 +3,7 @@ name: Agnieszka Stobierska
 title: Arkitekt SAR/MSA
 email: agnieszka.stobierska@me.com
 phone: +46 73-783 17 24
+mainPhoto: https://upload.wikimedia.org/wikipedia/commons/6/6d/Ydre_h%C3%A4radsdr%C3%A4kt_man.jpg
 experience: >-
   ## Erfarenheter
 
