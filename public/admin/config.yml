@@ -62,3 +62,4 @@ collections:
           - { label: "Phone", name: "phone", widget: "string" }
           - { label: "Main photo", name: "mainPhoto", widget: "image" }
           - { label: "Experience", name: "experience", widget: "markdown" }
+          - { label: "Motivation", name: "motivation", widget: "markdown" }
