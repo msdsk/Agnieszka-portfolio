@@ -52,14 +52,18 @@ collections:
   - name: "main"
     label: "Main"
     files:
-      - label: "About"
-        name: "about"
-        file: "content/main/about.md"
+      - label: "Contact"
+        name: "contact"
+        file: "content/main/contact.md"
         fields:
           - { lablel: "Name", name: "name", widget: "string" }
           - { label: "Title", name: "title", widget: "text" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone", name: "phone", widget: "string" }
+      - label: "About"
+        name: "about"
+        file: "content/main/about.md"
+        fields:
           - { label: "Main photo", name: "mainPhoto", widget: "image" }
           - { label: "Experience", name: "experience", widget: "markdown" }
           - { label: "Motivation", name: "motivation", widget: "markdown" }

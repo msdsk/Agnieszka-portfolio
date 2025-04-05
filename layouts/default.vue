@@ -1,5 +1,6 @@
 <template>
 	<div class="layout-wrapper" :class="{ '--firstVisitAnimation': firstVisit }">
+		<LayoutInfo />
 		<slot />
 		<LayoutFooter />
 	</div>
@@ -28,7 +29,6 @@ body {
 .layout-wrapper {
 	max-width: 100vh;
 	margin: 0 auto;
-	padding: 0 2rem;
 }
 
 .layout-wrapper::after {
