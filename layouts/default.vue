@@ -1,8 +1,8 @@
 <template>
 	<div class="layout-wrapper" :class="{ '--firstVisitAnimation': firstVisit }">
-		<LayoutInfo />
+		<!-- <LayoutInfo /> -->
 		<slot />
-		<LayoutFooter />
+		<!-- <LayoutFooter /> -->
 	</div>
 </template>
 
@@ -21,11 +21,27 @@ watch(() => route.fullPath,
 <style lang="scss">
 html,
 body {
-	perspective: 10px;
-	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	background: rgb(232, 215, 200);
+	color: rgb(215, 104, 0);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+* {
+	color: inherit;
+}
+
+h1 {
+	font-size: 3rem;
 }
 </style>
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 .layout-wrapper {
 	max-width: 100vh;
 	margin: 0 auto;
@@ -41,4 +57,4 @@ body {
 	left: 0;
 	background-color: rgba(0, 29, 121, 0.74);
 }
-</style>
+</style> -->
